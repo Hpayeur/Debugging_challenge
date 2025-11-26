@@ -1,7 +1,9 @@
 /* Some kind of header tag is supposed to be here */
-1 {
-  color: red;
+
+header{
+    color: #926cf0;
 }
+
 
 /* You should have input here */
 someinputhere {
@@ -13,38 +15,39 @@ someinputhere {
 
 @keyframes rainbow {
   0% {
-    color: red;
+    color: #22277A;
   }
   14% {
-    color: orange;
+    color: #4066e0;
   }
   28% {
-    color: cyan;
+    color: #b9bfff;
   }
   42% {
-    color: green;
+    color: #8b74bd;
   }
   57% {
-    color: blue;
+    color: #7953a9;
   }
   71% {
-    color: indigo;
+    color: #663399;
   }
   85% {
-    color: violet;
+    color: #52099b;
   }
   100% {
-    color: red;
+    color: #22277A;
   }
 }
 
-/* half of this class tag is in the html file already */
-.-text {
+.rainbow-text{
   animation: rainbow 5s linear infinite;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-animation: rainbow 5s linear infinite;
   animation: rainbow 5s linear infinite;
 }
+
+/* half of this class tag is in the html file already */
 
 @keyframes wave {
   0% {

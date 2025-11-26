@@ -13,7 +13,7 @@ someinputhere {
   margin: 5px;
 }
 
-@keyframes rainbow {
+@keyframes rainbow-text {
   0% {
     color: #22277A;
   }
@@ -41,10 +41,10 @@ someinputhere {
 }
 
 .rainbow-text{
-  animation: rainbow 5s linear infinite;
+  animation: rainbow 6s linear infinite;
   background-clip: text;
-  -webkit-animation: rainbow 5s linear infinite;
-  animation: rainbow 5s linear infinite;
+  -webkit-animation: rainbow 6s linear infinite;
+  animation: rainbow 6s linear infinite;
 }
 
 /* half of this class tag is in the html file already */

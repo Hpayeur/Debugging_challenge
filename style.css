@@ -13,40 +13,25 @@ someinputhere {
   margin: 5px;
 }
 
-@keyframes rainbow-text {
-  0% {
-    color: #22277A;
-  }
-  14% {
-    color: #4066e0;
-  }
-  28% {
-    color: #b9bfff;
-  }
-  42% {
-    color: #8b74bd;
-  }
-  57% {
-    color: #7953a9;
-  }
-  71% {
-    color: #663399;
-  }
-  85% {
-    color: #52099b;
-  }
-  100% {
-    color: #22277A;
-  }
+@keyframes rainbow-text  {
+  0% { color: #22277A; }
+  14.28% { color: #4066e0; } 
+  28.56% { color: #b9bfff; }
+  42.84% { color: #8b74bd; }
+  57.12% { color: #7953a9; }
+  71.4% { color: #663399; }
+  85.68% { color: #52099b; }
+  100% { color: #22277A; }
 }
 
-.rainbow-text{
-  animation: rainbow 6s linear infinite;
-  background-clip: text;
-  -webkit-animation: rainbow 6s linear infinite;
-  animation: rainbow 6s linear infinite;
+.rainbow {
+  animation-name: rainbow-text;
+  animation-duration: 5s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear; 
+  font-size: 1.2em; 
+  font-weight: bold
 }
-
 /* half of this class tag is in the html file already */
 
 @keyframes wave {
@@ -72,5 +57,6 @@ someinputhere {
 
 .bold {
   display: inline-block;
+  font-size: 1.1em;
   animation: wave 2s ease-in-out infinite;
 }

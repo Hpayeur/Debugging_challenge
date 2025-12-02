@@ -1,27 +1,45 @@
 
-console.error('Hello Everyone I am an error message! Fix me if you Dare!');
+//Old Code
+// make sure these match the HTML element names for the ID then class.
+
+//let input = document.querySelector("#NAME");
+//let display = document.querySelector(".displaymycode");
+
+// This code should be working
+
+//input.addEventListener("input", function () {
+//   const name = input.value;
+//   display.textContent = name;
+// });
+
+
+// missing function?
+
+// you should see 5 in the output of your console
+
+//console.log(simpleMath(2, 3));
+
+
+//Fixed Code
 let input = document.querySelector("#name");
+let display = document.querySelector("#display");
 
-let display = document.querySelector(".display");
-
+// This code should be working
 input.addEventListener("input", function () {
-   const name = input.value;
-   display.textContent = name;
+  const name = input.value;
+  display.textContent = name;
 });
 
-function greet(greeting = 'Hello', name) {
- if(!name) {
-    return greeting;
-} else {
-   return `${greeting} ${name}`;  }}
 
-let age =2;
-console.log (age + 3);
+ function simpleMath(a, b) {
+  return a + b;
+}
 
-// make sure these match the HTML element names for the ID then class.
-//let display = document.querySelector(".display"); //My code
-// This code should be working
-//let display = document.querySelector(".display"); //My code
-// missing function? 
+ // you should see 5 in the output of your console
+console.log(simpleMath(2, 3));
+
+
+
+//Notes from learning:
 //console.log(7/2); //Float = 3.5
 //console.log(simpleMath(2, 3));

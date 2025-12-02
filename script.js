@@ -24,12 +24,12 @@
 let input = document.querySelector("#name");
 let display = document.querySelector("#display");
 
-// This code should be working
-input.addEventListener("input", function () {
-  const name = input.value;
-  display.textContent = name;
-});
+const nameInput = document.getElementById('name');
+    const outputParagraph = document.getElementById('output');
 
+    nameInput.addEventListener('input', function() {
+        outputParagraph.textContent = ' ' + nameInput.value + '';
+    });
 
  function simpleMath(a, b) {
   return a + b;
